@@ -1,10 +1,12 @@
 %{
 #include<stdio.h>
+a=digit
+
 %}
 
 %%
 [0-9]+ {printf("%s, is a digit", yytext);}
-.+ {printf("it is  not a digit");}
+
 %%
 int main()
 {
@@ -14,5 +16,3 @@ yylex();
 int yywrap()
 {
 return 1;
-}
-
