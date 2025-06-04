@@ -10,7 +10,6 @@ sub "-"
 mul "*"
 div "/"
 pow "^"
-ln \n
 %%
 {digit} {digi();} 
 {add} {op=1;}
@@ -20,6 +19,8 @@ ln \n
 {pow} {op=5;}
 {ln} {printf("\n The Answer :%.3f\n\n",a);} 
 %%
+
+
 int digi()
 {+
  if(op==0)
